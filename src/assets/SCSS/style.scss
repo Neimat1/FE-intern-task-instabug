@@ -3,3 +3,152 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{margin: 0;padding: 0;}
+
+/*---------------------------------------------- global classes----------------------------------------------------------*/
+.shadow-lg{ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.336);}
+.bg-light-blue{background-color: #4285f4;}
+.bg-white{background-color: #fff;}
+.bg-muted{background-color: #333;}
+.text-white{color: #fff;}
+.text-muted{color: #333;}
+.d-flex{display: flex;}
+.d-block{display: block;}
+.align-items-center{align-items: center;}
+.flex-direction-column{flex-direction: column;}
+.brdr-4{ border-radius: 5px;}
+.pad-5{padding: 5px;}
+.brdr-muted{border: .5px solid #3333;}
+.brdr-circle{border-radius: 50%;}
+.font-bold{font-weight: bold;}
+.fs-4{font-size: 14px;}
+.text-decoration-none{text-decoration: none;}
+.w-100{width:100% ;}
+.w-50{width:50% ;}
+.w-75{width:75% ;}
+.mt-10{margin-top: 10px;}
+button{cursor: pointer;}
+.text-center{text-align: center;}
+
+/*---------------------------------------------login component-------------------------------------------------------------*/
+.form-header{
+    h1{
+        text-align: center;
+        font-weight: normal;
+        color:$blue-insta;
+    }
+
+}
+.form-group{margin-bottom: 10px;}
+
+form{
+    max-width: 420px;
+    margin: 30px auto;
+    text-align: left;
+    padding: 40px;
+
+    label{
+        color:$blue-insta;
+        display: inline-block;
+        margin: 15px 0 ;
+        font-size: .6em;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+
+    }
+    input{
+        display: block;
+        padding: 10px 6px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        color:$muted-text;
+
+        &:active,
+        &:focus{
+            outline-color: $light-blue-insta;
+        }
+    }
+    button{
+        span{
+            width: 80%;
+            margin-right: 10%;
+        }
+
+        padding: 3px 3px;
+        margin-bottom: 5px;
+        border: 0;
+    
+}
+
+
+
+
+
+}
+/*------------------------------------------- Carousel ---------------------------------------------------*/
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$blue-insta ;
+    height: 100vh;
+    overflow: hidden;
+}
+.carousel-inner{position: relative;}
+
+.carousel-indicators{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%; bottom:-4em;
+    z-index: 2;
+}
+
+.carousel-indicator-item{
+
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    border:1px solid #fff;
+    margin: .2em;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.carousel-item{
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+
+
+.active{background-color: #fff;}
+@media (max-width:765px){
+    .carousel{
+        display: none;
+    }
+}
+/*----------------------------------------------------------------------------------------------*/
+
+.not-found{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,#00b4d84b,#90e1ef52 );
+    height: 100vh;
+    
+    h1{
+        color:$blue-insta;
+        text-transform: capitalize;
+        margin-bottom:10px;
+    }
+
+    p{
+        color:#5d7199;
+        font-weight: bold;
+    }
+
+}

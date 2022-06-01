@@ -10,6 +10,14 @@ const routes = [
     },
     component: LoginView
   },
+  {
+    path: '/404',
+    name: '404',
+    meta:{
+      title:'User Feedback & Bug reporting | Instabug'
+    },
+    component: () => import( '../views/404View.vue')
+  }
 ]
 
 const router = createRouter({

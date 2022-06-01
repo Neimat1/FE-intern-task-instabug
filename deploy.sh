@@ -16,6 +16,6 @@ git commit -m 'deploy'
 
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:Neimat1/FE-intern-task-instabug.git production:gh-pages
+git push -f https://github.com/Neimat1/FE-intern-task-instabug.git production:gh-pages
 
 cd -

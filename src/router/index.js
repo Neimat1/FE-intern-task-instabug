@@ -17,6 +17,14 @@ const routes = [
       title:'User Feedback & Bug reporting | Instabug'
     },
     component: () => import( '../views/404View.vue')
+  }, 
+  {
+    path: '/welcome',
+    name: 'welcome',
+    meta:{
+      title:'Login | Instabug'
+    },
+    component: () => import('../views/WelcomeView.vue')
   }
 ]
 
